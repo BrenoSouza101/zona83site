@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Importação da fonte do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Loja Links</title>
+
+    <style>
+      /* CSS Reset e Definições Globais */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Variáveis de Cores e Estilos */
+      :root {
+        --text-color: white;
+        --bg-url: url(https://i.postimg.cc/Zn2wkKZV/531e320b9827682eba0002f5img1-46.webp);
+        --stroke-color: rgba(255, 255, 255, 0.5);
+        --surface-color: rgba(0, 0, 0, 0.2);
+        --surface-color-hover: rgba(0, 0, 0, 0.1);
+        --social-link-hover: rgba(255, 255, 255, 0.2);
+      }
+
+      body {
+        /* Imagem de fundo */
+        background: var(--bg-url) no-repeat top center/cover;
+        height: 100vh;
+      }
+
+      body * {
+        font-family: "Inter", sans-serif;
+        color: var(--text-color);
+      }
+
+      #container {
+        width: 100%;
+        max-width: 588px;
+        margin: 56px auto 0px;
+        padding: 0 24px;
+      }
+
+      /* Perfil */
+      #profile {
+        text-align: center;
+        padding: 24px;
+      }
+
+      #profile img {
+        width: 112px;
+        height: 112px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid var(--stroke-color);
+      }
+
+      #profile p {
+        font-weight: 500;
+        line-height: 24px;
+        margin-top: 8px;
+        /* Sombra no texto para melhor legibilidade */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+      }
+
+      /* Lista de Links */
+      ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px 0;
+      }
+
+      ul li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 24px;
+        background: var(--surface-color);
+        border: 1px solid var(--stroke-color);
+        border-radius: 8px;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        text-decoration: none;
+        font-weight: 500;
+        transition: background 0.2s;
+      }
+
+      ul li a:hover {
+        background: var(--surface-color-hover);
+        border: 1.5px solid var(--text-color);
+      }
+
+      /* Links Sociais */
+      #social-links {
+        display: flex;
+        justify-content: center;
+        padding: 24px 0;
+        font-size: 24px;
+      }
+
+      #social-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        transition: background 0.2s;
+        border-radius: 50%;
+      }
+
+      #social-links a:hover {
+        background: var(--social-link-hover);
+      }
+      
+      footer {
+        padding: 24px 0;
+        text-align: center;
+        font-size: 14px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+      }
+      
+      /* Cores customizadas para ícones sociais */
+      #social-links svg path {
+        /* Aplica o gradiente definido no SVG */
+        fill: url(#instagram-gradient);
+      }
+
+      #social-links .tiktok-icon ion-icon {
+        color: black;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <!-- LOGO ATUALIZADA -->
+        <img
+          src="https://i.postimg.cc/sf01RRr7/Gemini-Generated-Image-pfeldwpfeldwpfel.png"
+          alt="Logo da Zona83"
+        />
+        <!-- NOME DE USUÁRIO ATUALIZADO -->
+        <p>@zona.83</p>
+      </div>
+
+      <ul>
+        <!-- TROQUE AQUI: Personalize os links e os textos -->
+        <li>
+          <a href="#" target="_blank">Ver Catálogo de Produtos</a>
+        </li>
+        <li>
+          <a href="#" target="_blank">Fale conosco no WhatsApp</a>
+        </li>
+      </ul>
+
+      <div id="social-links">
+        <!-- ÍCONES SOCIAIS ATUALIZADOS -->
+        <a href="https://www.instagram.com/zona.83/" target="_blank">
+            <!-- Instagram icon com SVG para gradiente -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient id="instagram-gradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(28 -4) rotate(135) scale(34)">
+                        <stop stop-color="#fdc160"/>
+                        <stop offset=".4" stop-color="#f58529"/>
+                        <stop offset=".6" stop-color="#d6249f"/>
+                        <stop offset=".9" stop-color="#833ab4"/>
+                    </radialGradient>
+                </defs>
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919C8.416 2.175 8.796 2.163 12 2.163zm0 1.442c-3.117 0-3.483.01-4.692.063-2.694.123-3.993 1.423-4.116 4.116-.053 1.21-.063 1.562-.063 4.692s.01 3.482.063 4.692c.123 2.694 1.423 3.993 4.116 4.116 1.21.053 1.575.063 4.692.063s3.482-.01 4.692-.063c2.694-.123 3.993-1.423 4.116-4.116.053-1.21.063-1.562.063-4.692s-.01-3.482-.063-4.692c-.123-2.694-1.423-3.993-4.116-4.116-1.21-.053-1.575-.063-4.692-.063zM12 7.25c-2.618 0-4.75 2.132-4.75 4.75s2.132 4.75 4.75 4.75 4.75-2.132 4.75-4.75-2.132-4.75-4.75-4.75zm0 7.917c-1.747 0-3.167-1.42-3.167-3.167s1.42-3.167 3.167-3.167 3.167 1.42 3.167 3.167-1.42 3.167-3.167 3.167zm5.25-8.834c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25z" fill="url(#instagram-gradient)"/>
+            </svg>
+        </a>
+        <a href="https://www.tiktok.com/@zona.083" target="_blank" class="tiktok-icon">
+          <ion-icon name="logo-tiktok"></ion-icon>
+        </a>
+      </div>
+      
+      <footer>
+        Feito com ♥ pela sua equipe.
+      </footer>
+    </div>
+
+    <!-- Scripts para Ícones -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+  </body>
+</html>
