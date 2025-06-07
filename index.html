@@ -28,6 +28,7 @@
         --stroke-color: rgba(255, 255, 255, 0.5);
         --surface-color: rgba(0, 0, 0, 0.2);
         --surface-color-hover: rgba(0, 0, 0, 0.1);
+        --social-bg-color: rgba(0, 0, 0, 0.3);
       }
 
       body {
@@ -104,9 +105,9 @@
       #social-links {
         display: flex;
         justify-content: center;
-        gap: 32px; /* Espaçamento entre os ícones */
+        gap: 16px;
         padding: 24px 0;
-        font-size: 28px;
+        font-size: 24px;
       }
 
       #social-links a {
@@ -114,10 +115,17 @@
         align-items: center;
         justify-content: center;
         transition: transform 0.3s;
+        width: 56px;
+        height: 56px;
+        background: var(--social-bg-color);
+        border: 1px solid var(--stroke-color);
+        border-radius: 50%;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
       }
 
       #social-links a:hover {
-        transform: scale(1.15); /* Efeito de zoom ao passar o rato */
+        transform: scale(1.1);
       }
       
       footer {
@@ -129,15 +137,8 @@
         text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
       }
       
-      /* Estilo minimalista para ícones sociais */
       #social-links ion-icon {
-        color: black; /* Cor do ícone alterada para preto */
-        /* Sombra que cria um contorno branco para máxima legibilidade */
-        text-shadow: 
-          -1px -1px 0 #fff,  
-           1px -1px 0 #fff,
-          -1px  1px 0 #fff,
-           1px  1px 0 #fff;
+        color: white;
       }
 
     </style>
@@ -145,7 +146,7 @@
   <body>
     <div id="container">
       <div id="profile">
-        <!-- LOGO ATUALIZADA -->
+        <!-- LOGO ATUALIZADA PARA CAMINHO LOCAL -->
         <img
           src="Gemini_Generated_Image_pfeldwpfeldwpfel.png"
           alt="Logo da Zona83"
@@ -165,7 +166,7 @@
       </ul>
 
       <div id="social-links">
-        <!-- ÍCONES SOCIAIS ATUALIZADOS PARA ESTILO MINIMALISTA -->
+        <!-- ÍCONES SOCIAIS COM NOVO ESTILO -->
         <a href="https://www.instagram.com/zona.83/" target="_blank">
             <ion-icon name="logo-instagram"></ion-icon>
         </a>
